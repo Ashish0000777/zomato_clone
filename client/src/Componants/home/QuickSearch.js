@@ -5,7 +5,7 @@ import {useNavigate} from "react-router-dom"
 function Quicksearch() {
   let [MealTypeList, setMealTypelist] = useState([]);
   let getMealtype = async () => {
-    let Result = await axios.get("http://localhost:3001/api/get-mealType");
+    let Result = await axios.get("https://zomato-clone-1-kigj.onrender.com/api/get-mealType");
     let Data = Result.data; 
   
     if (Data.status === true) {
